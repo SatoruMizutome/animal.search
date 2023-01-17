@@ -1,0 +1,93 @@
+@charset "utf-8";
+html,body {height: 100%;}
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #000000;	/*全体の文字色*/
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-size: 16px;	/*文字サイズ*/
+	line-height: 2;		/*行間*/
+	background: #FDF5E6;	/*背景色*/
+	-webkit-text-size-adjust: none;
+}
+header {
+	height: 100%;
+	overflow: auto;
+	position: relative;
+	background: url(../images/mainimg.jpg) no-repeat center center / cover;	/*背景画像の読み込み*/
+}
+
+
+
+/*ロゴ画像*/
+header #logo img {
+	display: block;
+	width: 20%;	/*画像の幅*/
+	position: absolute;
+	left: 15%;		/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
+	bottom: 50%;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+}
+
+#commentbar {
+    color: #000000;
+	position: absolute;
+	bottom: 35%;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+	left: 15%;
+}
+#commentbar h2{
+    font-size: 40px;
+}
+
+#commentbar h3{
+    font-size: 20px;
+}
+
+.fadeIn {
+    animation-name: fadeInAnime;
+    animation-fill-mode:backwards;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease;
+    animation-delay: 1s;
+    animation-direction:normal;
+}
+    
+    
+@keyframes fadeInAnime{
+    0% {
+        opacity: 0;
+      }
+    
+      100% {
+        opacity: 1;
+      }
+ }
+
+ .contain-animation {
+    height: 200px;
+  }
+  
+  .contain-bear {
+    position: relative;
+    top: 50px;
+    margin: -50px auto;
+    width: 575px;
+    height: 200px;
+  }
+  
+  .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #feffff;
+    height: 150px;
+    width: 675px;
+    animation: walk 7s steps(7, end) infinite;
+  }
+  
+  @keyframes walk {
+    to {
+      transform: translateX(675px);
+    }
+  }
+  

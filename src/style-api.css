@@ -1,0 +1,19 @@
+.image-box {
+    cursor: zoom-in;
+    display: inline-block;
+  }
+  
+  .image-dialog {
+    padding: 0;
+  }
+  
+  .image-dialog::backdrop {
+    cursor: zoom-out;
+  }
+  
+  .contents img {
+    vertical-align: top;
+    width: 90vw;
+  }
+  
+ 
